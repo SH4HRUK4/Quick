@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { assets } from "@/assets/assets";
+import { assets } from "../assets/assets";
 import Image from "next/image";
 
 const HeaderSlider = () => {
@@ -67,7 +67,11 @@ const HeaderSlider = () => {
                 </button>
                 <button className="group flex items-center gap-2 px-6 py-2.5 font-medium">
                   {slide.buttonText2}
-                  <Image className="group-hover:translate-x-1 transition" src={assets.arrow_icon} alt="arrow_icon" />
+                  <Image
+                    className="group-hover:translate-x-1 transition"
+                    src={assets.arrow_icon}
+                    alt="arrow_icon"
+                  />
                 </button>
               </div>
             </div>
